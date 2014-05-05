@@ -86,7 +86,9 @@ module Elasticsearch
           :percolate_index,
           :percolate_type,
           :version,
-          :version_type ]
+          :version_type,
+          :size,
+          :highlight ]
 
         method = 'GET'
         path   = Utils.__pathify Utils.__escape(arguments[:index]),
